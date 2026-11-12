@@ -1,0 +1,30 @@
+{
+  "/Users/anweshasaha/Desktop/pharmachain-sensors/contracts/ColdChainAudit.sol": {
+    "jobHash": "solc-0_8_20-259a4c75a9b3ab577734117bf3c2ac9d1a73beb0",
+    "isolated": false,
+    "compilerType": "solc",
+    "artifactPaths": [
+      "/Users/anweshasaha/Desktop/pharmachain-sensors/artifacts/contracts/ColdChainAudit.sol/ColdChainAudit.json"
+    ],
+    "buildInfoPath": "/Users/anweshasaha/Desktop/pharmachain-sensors/artifacts/build-info/solc-0_8_20-259a4c75a9b3ab577734117bf3c2ac9d1a73beb0.json",
+    "buildInfoOutputPath": "/Users/anweshasaha/Desktop/pharmachain-sensors/artifacts/build-info/solc-0_8_20-259a4c75a9b3ab577734117bf3c2ac9d1a73beb0.output.json",
+    "typeFilePath": "/Users/anweshasaha/Desktop/pharmachain-sensors/artifacts/contracts/ColdChainAudit.sol/artifacts.d.ts",
+    "wasm": false,
+    "artifactsDirectory": "/Users/anweshasaha/Desktop/pharmachain-sensors/artifacts",
+    "emitsTypeDeclarations": true
+  },
+  "/Users/anweshasaha/Desktop/pharmachain-sensors/contracts/Sensor.sol": {
+    "jobHash": "solc-0_8_20-d62ecec2c44d355051896c9e60a397b8411487b2",
+    "isolated": false,
+    "compilerType": "solc",
+    "artifactPaths": [
+      "/Users/anweshasaha/Desktop/pharmachain-sensors/artifacts/contracts/Sensor.sol/SensorContract.json"
+    ],
+    "buildInfoPath": "/Users/anweshasaha/Desktop/pharmachain-sensors/artifacts/build-info/solc-0_8_20-d62ecec2c44d355051896c9e60a397b8411487b2.json",
+    "buildInfoOutputPath": "/Users/anweshasaha/Desktop/pharmachain-sensors/artifacts/build-info/solc-0_8_20-d62ecec2c44d355051896c9e60a397b8411487b2.output.json",
+    "typeFilePath": "/Users/anweshasaha/Desktop/pharmachain-sensors/artifacts/contracts/Sensor.sol/artifacts.d.ts",
+    "wasm": false,
+    "artifactsDirectory": "/Users/anweshasaha/Desktop/pharmachain-sensors/artifacts",
+    "emitsTypeDeclarations": true
+  }
+}

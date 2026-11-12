@@ -1,0 +1,42 @@
+{
+  "_format": "hh3-sol-build-info-1",
+  "id": "solc-0_8_20-259a4c75a9b3ab577734117bf3c2ac9d1a73beb0",
+  "solcVersion": "0.8.20",
+  "solcLongVersion": "0.8.20+commit.a1b79de6",
+  "compilerType": "solc",
+  "userSourceNameMap": {
+    "contracts/ColdChainAudit.sol": "project/contracts/ColdChainAudit.sol"
+  },
+  "input": {
+    "language": "Solidity",
+    "settings": {
+      "evmVersion": "shanghai",
+      "outputSelection": {
+        "*": {
+          "": [
+            "ast"
+          ],
+          "*": [
+            "abi",
+            "evm.bytecode.linkReferences",
+            "evm.bytecode.object",
+            "evm.bytecode.opcodes",
+            "evm.bytecode.sourceMap",
+            "evm.deployedBytecode.immutableReferences",
+            "evm.deployedBytecode.linkReferences",
+            "evm.deployedBytecode.object",
+            "evm.deployedBytecode.opcodes",
+            "evm.deployedBytecode.sourceMap",
+            "evm.methodIdentifiers"
+          ]
+        }
+      },
+      "remappings": []
+    },
+    "sources": {
+      "project/contracts/ColdChainAudit.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract ColdChainAudit {\n    struct Reading {\n        string batchId;\n        uint256 temperature;\n        uint256 humidity;\n        bool isAnomaly;\n        uint256 timestamp;\n        address loggedBy;\n    }\n\n    mapping(string => Reading[]) public auditTrails;\n    event ReadingLogged(string indexed batchId, uint256 temperature, bool isAnomaly, uint256 timestamp);\n\n    function logReading(string memory _batchId, uint256 _temp, uint256 _humidity, bool _anomaly) public {\n        Reading memory newReading = Reading({\n            batchId: _batchId,\n            temperature: _temp,\n            humidity: _humidity,\n            isAnomaly: _anomaly,\n            timestamp: block.timestamp,\n            loggedBy: msg.sender\n        });\n        \n        auditTrails[_batchId].push(newReading);\n        emit ReadingLogged(_batchId, _temp, _anomaly, block.timestamp);\n    }\n\n    function getAuditTrailCount(string memory _batchId) public view returns (uint256) {\n        return auditTrails[_batchId].length;\n    }\n}\n"
+      }
+    }
+  }
+}
