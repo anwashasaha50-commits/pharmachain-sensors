@@ -49,4 +49,4 @@ class BreachDetector:
             anomalous = forest or out_of_range
 
         self.run = self.run + 1 if anomalous else 0
-        return anomalous, self.run > self.consecutive, forest, out_of_range
+        return anomalous, self.run >= self.consecutive, forest, out_of_range

@@ -14,11 +14,13 @@ MODES = ("range", "forest", "combined")
 
 def feature_matrix(readings):
     rows, prev = [], None
+
     for r in readings:
         prev = r["temp"] if prev is None else prev
         rows.append(features(r["temp"], r["humidity"], prev))
-    return np.array(rows)
+        prev = r["temp"]
 
+    return np.array(rows)
 def train():
     sim = SensorSimulator(seed=1)
     readings = [sim.read() for _ in range(TRAIN_READINGS)]

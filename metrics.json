@@ -6,13 +6,13 @@
   },
   "('door_open', 'forest')": {
     "runs": 30,
-    "detected": 28,
-    "avg_delay": -2.1666666666666665
+    "detected": 30,
+    "avg_delay": 0.0
   },
   "('door_open', 'combined')": {
     "runs": 30,
-    "detected": 28,
-    "avg_delay": -2.1666666666666665
+    "detected": 30,
+    "avg_delay": 0.0
   },
   "('power_failure', 'range')": {
     "runs": 30,
@@ -21,13 +21,13 @@
   },
   "('power_failure', 'forest')": {
     "runs": 30,
-    "detected": 28,
-    "avg_delay": -1.2
+    "detected": 25,
+    "avg_delay": 9.8
   },
   "('power_failure', 'combined')": {
     "runs": 30,
-    "detected": 28,
-    "avg_delay": -1.2
+    "detected": 30,
+    "avg_delay": 4.566666666666666
   },
   "('compressor_fault', 'range')": {
     "runs": 30,
@@ -36,13 +36,13 @@
   },
   "('compressor_fault', 'forest')": {
     "runs": 30,
-    "detected": 28,
-    "avg_delay": -2.1
+    "detected": 30,
+    "avg_delay": 0.0
   },
   "('compressor_fault', 'combined')": {
     "runs": 30,
-    "detected": 28,
-    "avg_delay": -2.1
+    "detected": 30,
+    "avg_delay": 0.0
   },
   "('spike', 'range')": {
     "runs": 30,
@@ -51,13 +51,13 @@
   },
   "('spike', 'forest')": {
     "runs": 30,
-    "detected": 2,
-    "avg_delay": -2.25
+    "detected": 0,
+    "avg_delay": null
   },
   "('spike', 'combined')": {
     "runs": 30,
-    "detected": 2,
-    "avg_delay": -2.25
+    "detected": 0,
+    "avg_delay": null
   },
   "('none', 'range')": {
     "runs": 30,
@@ -66,21 +66,21 @@
   },
   "('none', 'forest')": {
     "runs": 30,
-    "detected": 4,
+    "detected": 0,
     "avg_delay": null
   },
   "('none', 'combined')": {
     "runs": 30,
-    "detected": 4,
+    "detected": 0,
     "avg_delay": null
   },
   "reading_level": {
-    "tp": 1557,
-    "fp": 462,
-    "fn": 33,
-    "tn": 15948,
-    "precision": 0.7711738484398217,
-    "recall": 0.9792452830188679,
-    "f1": 0.8628428927680798
+    "tp": 1487,
+    "fp": 408,
+    "fn": 103,
+    "tn": 16002,
+    "precision": 0.7846965699208444,
+    "recall": 0.9352201257861635,
+    "f1": 0.8533715925394547
   }
 }

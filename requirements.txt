@@ -4,3 +4,4 @@ joblib
 requests
 flask
 eth-hash[pycryptodome]
+web3
