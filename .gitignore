@@ -2,3 +2,8 @@ venv/
 __pycache__/
 model.joblib
 anchored_windows.json
+
+# Generated blockchain files
+artifacts/
+cache/
+node_modules/
